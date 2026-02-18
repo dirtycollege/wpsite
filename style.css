@@ -250,8 +250,8 @@ body {
 }
 
 .popup-box {
-    width: 300px;
-    max-height: 75vh; /* prevent overflow from cutting content */
+    width: 350px;
+    max-height: 85vh; /* prevent overflow from cutting content */
     overflow-y: auto; /* enable scroll if content exceeds */
     background: #0f8b6d;
     border-radius: 12px;
