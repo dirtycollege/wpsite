@@ -245,13 +245,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 9999;
+    z-index: 5555;
     padding: 20px; /* extra padding to prevent cut */
 }
 
 .popup-box {
-    width: 250px;
-    max-height: 55vh; /* prevent overflow from cutting content */
+    width: 300px;
+    max-height: 75vh; /* prevent overflow from cutting content */
     overflow-y: auto; /* enable scroll if content exceeds */
     background: #0f8b6d;
     border-radius: 12px;
