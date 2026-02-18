@@ -250,8 +250,8 @@ body {
 }
 
 .popup-box {
-    width: 320px;
-    max-height: 90vh; /* prevent overflow from cutting content */
+    width: 250px;
+    max-height: 55vh; /* prevent overflow from cutting content */
     overflow-y: auto; /* enable scroll if content exceeds */
     background: #0f8b6d;
     border-radius: 12px;
@@ -264,8 +264,8 @@ body {
 
 .close-btn {
     position: absolute;
-    top: 12px; /* move a bit down so it's visible */
-    right: 12px;
+    top: 20px; /* move a bit down so it's visible */
+    right: 20px;
     color: white;
     cursor: pointer;
     font-size: 18px;
