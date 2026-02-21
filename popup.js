@@ -58,7 +58,7 @@ window.addEventListener('load', () => {
 
     // WhatsApp links
     const userLinks = {
-        "PRIYANKA SINGH": "https://wa.me/1234567890",
+        "Priyanka Singh": "https://wa.me/1234567890",
         "Kamini": "https://wa.me/9876543210",
         "Neha": "https://wa.me/1122334455",
         "Pari": "https://wa.me/5566778899",
