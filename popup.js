@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
 
     /* ================= PAYMENT POPUP ================= */
 
-    const PAYMENT_LINK = "https://rzp.io/rzp/YRugF3du";
+    const PAYMENT_LINK = "https://rzp.io/rzp/bPMWiAOd";
 
     const offerPopup = document.getElementById("offerPopup");
     const popupImg = document.getElementById("popupImg");
