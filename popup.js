@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
 
     /* ================= PAYMENT POPUP ================= */
 
-    const PAYMENT_LINK = "https://rzp.io/rzp/19aP0pk6";
+    const PAYMENT_LINK = "https://razorpay.me/@nehaservices6398";
 
     const offerPopup = document.getElementById("offerPopup");
     const popupImg = document.getElementById("popupImg");
