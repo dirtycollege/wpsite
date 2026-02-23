@@ -7,28 +7,19 @@ window.addEventListener('load', () => {
     const noBtn = document.getElementById('noBtn');
 
     setTimeout(() => {
-        if (countryPopup) countryPopup.classList.add('show');
+        countryPopup?.classList.add('show');
     }, 500);
 
-    if (yesBtn && countryPopup) {
-        yesBtn.addEventListener('click', () => {
-            countryPopup.classList.remove('show');
-        });
+    function closeCountryPopup() {
+        countryPopup?.classList.remove('show');
     }
 
-    if (noBtn && countryPopup) {
-        noBtn.addEventListener('click', () => {
-            countryPopup.classList.remove('show');
-        });
-    }
+    yesBtn?.addEventListener('click', closeCountryPopup);
+    noBtn?.addEventListener('click', closeCountryPopup);
 
-    if (countryPopup) {
-        countryPopup.addEventListener('click', (e) => {
-            if (e.target === countryPopup) {
-                countryPopup.classList.remove('show');
-            }
-        });
-    }
+    countryPopup?.addEventListener('click', (e) => {
+        if (e.target === countryPopup) closeCountryPopup();
+    });
 
     /* ================= PAYMENT POPUP ================= */
 
@@ -37,77 +28,52 @@ window.addEventListener('load', () => {
     const offerPopup = document.getElementById("offerPopup");
     const popupImg = document.getElementById("popupImg");
     const popupCallBtn = document.getElementById("popupCallBtn");
-    const confirmBtn = document.getElementById("confirmBtn");
 
     function closePopup() {
         if (offerPopup) offerPopup.style.display = "none";
     }
 
-    const closeBtn = offerPopup?.querySelector(".close-btn");
-    if (closeBtn) closeBtn.addEventListener("click", closePopup);
+    offerPopup?.querySelector(".close-btn")
+        ?.addEventListener("click", closePopup);
 
-    if (offerPopup) {
-        offerPopup.addEventListener("click", (e) => {
-            if (e.target === offerPopup) closePopup();
-        });
-    }
+    offerPopup?.addEventListener("click", (e) => {
+        if (e.target === offerPopup) closePopup();
+    });
 
-    /* UPDATED FINAL URLS */
-    const userLinks = {
-        "Priyanka Singh": "https://wpcall.dirtypush.com/priyanka",
-        "Kamini": "https://wpcall.dirtypush.com/kamini",
-        "Neha": "https://wpcall.dirtypush.com/neha",
-        "Pari": "https://wpcall.dirtypush.com/pari",
-        "Radha": "https://wpcall.dirtypush.com/radha",
-        "Ragini": "https://wpcall.dirtypush.com/ragini",
-        "Sneha": "https://wpcall.dirtypush.com/sneha",
-        "Sweta": "https://wpcall.dirtypush.com/sweta"
-    };
+    /* ================= CARD BUTTON LOGIC ================= */
 
     const cards = document.querySelectorAll(".card");
 
     cards.forEach(card => {
+
         const btn = card.querySelector(".card-btn");
         const userImg = card.querySelector(".media img")?.src;
-        const userName = card.querySelector(".info h3")?.textContent?.trim();
+        const userName = card.querySelector(".info h3")?.textContent;
 
-        if (btn && userImg && userName && userLinks[userName]) {
-            btn.addEventListener("click", (e) => {
-                e.preventDefault();
+        if (!btn || !userImg || !userName) return;
 
-                if (popupImg) popupImg.src = userImg;
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
 
-                if (popupCallBtn) {
-                    popupCallBtn.href = PAYMENT_LINK;
-                    popupCallBtn.dataset.finalLink = userLinks[userName];
-                }
+            if (popupImg) popupImg.src = userImg;
 
-                if (offerPopup) offerPopup.style.display = "flex";
-            });
-        }
+            if (popupCallBtn) {
+                popupCallBtn.href =
+                    PAYMENT_LINK + "?name=" + encodeURIComponent(userName.trim());
+            }
+
+            if (offerPopup) offerPopup.style.display = "flex";
+        });
     });
 
-    /* ================= PAY NOW ================= */
+    /* ================= PAY NOW BUTTON ================= */
 
-    if (popupCallBtn) {
-        popupCallBtn.addEventListener("click", function (e) {
-            e.preventDefault();
-            window.open(PAYMENT_LINK, "_blank");
-        });
-    }
+    popupCallBtn?.addEventListener("click", function (e) {
+        e.preventDefault();
 
-    /* ================= CONFIRM PAYMENT ================= */
-
-    if (confirmBtn) {
-        confirmBtn.addEventListener("click", (e) => {
-            e.preventDefault();
-
-            const finalLink = popupCallBtn?.dataset.finalLink;
-
-            if (finalLink) {
-                window.location.href = finalLink;
-            }
-        });
-    }
+        if (this.href) {
+            window.location.href = this.href;
+        }
+    });
 
 });
