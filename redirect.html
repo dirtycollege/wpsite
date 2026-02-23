@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get("name");
+
+        if (name) {
+            window.location.href =
+                "https://wpcall.dirtypush.com/" + encodeURIComponent(name);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
