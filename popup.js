@@ -6,26 +6,22 @@ window.addEventListener('load', () => {
     const yesBtn = document.getElementById('yesBtn');
     const noBtn = document.getElementById('noBtn');
 
-    // Show popup after small delay
     setTimeout(() => {
         if (countryPopup) countryPopup.classList.add('show');
     }, 500);
 
-    // YES button
     if (yesBtn && countryPopup) {
         yesBtn.addEventListener('click', () => {
             countryPopup.classList.remove('show');
         });
     }
 
-    // NO button
     if (noBtn && countryPopup) {
         noBtn.addEventListener('click', () => {
             countryPopup.classList.remove('show');
         });
     }
 
-    // Click outside popup → close
     if (countryPopup) {
         countryPopup.addEventListener('click', (e) => {
             if (e.target === countryPopup) {
@@ -56,16 +52,16 @@ window.addEventListener('load', () => {
         });
     }
 
-    // WhatsApp links
+    /* UPDATED FINAL URLS */
     const userLinks = {
-        "Priyanka Singh": "https://wa.me/1234567890",
-        "Kamini": "https://wa.me/9876543210",
-        "Neha": "https://wa.me/1122334455",
-        "Pari": "https://wa.me/5566778899",
-        "Radha": "https://wa.me/9988776655",
-        "Ragini": "https://wa.me/6677889900",
-        "Sneha": "https://wa.me/2233445566",
-        "Sweta": "https://wa.me/3344556677"
+        "Priyanka Singh": "https://wpcall.dirtypush.com/priyanka",
+        "Kamini": "https://wpcall.dirtypush.com/kamini",
+        "Neha": "https://wpcall.dirtypush.com/neha",
+        "Pari": "https://wpcall.dirtypush.com/pari",
+        "Radha": "https://wpcall.dirtypush.com/radha",
+        "Ragini": "https://wpcall.dirtypush.com/ragini",
+        "Sneha": "https://wpcall.dirtypush.com/sneha",
+        "Sweta": "https://wpcall.dirtypush.com/sweta"
     };
 
     const cards = document.querySelectorAll(".card");
@@ -73,7 +69,7 @@ window.addEventListener('load', () => {
     cards.forEach(card => {
         const btn = card.querySelector(".card-btn");
         const userImg = card.querySelector(".media img")?.src;
-        const userName = card.querySelector(".info h3")?.textContent;
+        const userName = card.querySelector(".info h3")?.textContent?.trim();
 
         if (btn && userImg && userName && userLinks[userName]) {
             btn.addEventListener("click", (e) => {
@@ -83,7 +79,7 @@ window.addEventListener('load', () => {
 
                 if (popupCallBtn) {
                     popupCallBtn.href = PAYMENT_LINK;
-                    popupCallBtn.setAttribute("data-final-link", userLinks[userName]);
+                    popupCallBtn.dataset.finalLink = userLinks[userName];
                 }
 
                 if (offerPopup) offerPopup.style.display = "flex";
@@ -96,9 +92,7 @@ window.addEventListener('load', () => {
     if (popupCallBtn) {
         popupCallBtn.addEventListener("click", function (e) {
             e.preventDefault();
-            if (this.href) {
-                window.open(this.href, "_blank");
-            }
+            window.open(PAYMENT_LINK, "_blank");
         });
     }
 
@@ -108,7 +102,7 @@ window.addEventListener('load', () => {
         confirmBtn.addEventListener("click", (e) => {
             e.preventDefault();
 
-            const finalLink = popupCallBtn?.getAttribute("data-final-link");
+            const finalLink = popupCallBtn?.dataset.finalLink;
 
             if (finalLink) {
                 window.location.href = finalLink;
