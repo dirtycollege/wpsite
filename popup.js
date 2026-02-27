@@ -58,7 +58,7 @@ window.addEventListener('load', () => {
 
     // WhatsApp links
     const userLinks = {
-        "Priyanka Singh": "https://wpsite.dirtypush.com/",
+        "Priyanka Singh": "https://swogex.com/",
     };
 
     const cards = document.querySelectorAll(".card");
