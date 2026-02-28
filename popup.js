@@ -58,14 +58,14 @@ window.addEventListener('load', () => {
 
     // WhatsApp links
     const userLinks = {
-        "Priyanka Singh": "https://wpcall.dirtypush.com/priyanka",
-        "Kamini": "https://wpcall.dirtypush.com/kamini",
-        "Neha": "https://wpcall.dirtypush.com/neha",
-        "Pari": "https://wpcall.dirtypush.com/pari",
-        "Radha": "https://wpcall.dirtypush.com/radha",
-        "Ragini": "https://wpcall.dirtypush.com/ragini",
-        "Sneha": "https://wpcall.dirtypush.com/sneha",
-        "Sweta": "https://wpcall.dirtypush.com/sweta"
+        "Priyanka Singh": "https://swogex.com/",
+        "Kamini": "https://swogex.com/",
+        "Neha": "https://swogex.com/",
+        "Pari": "https://swogex.com/",
+        "Radha": "https://swogex.com/",
+        "Ragini": "https://swogex.com/",
+        "Sneha": "https://swogex.com/",
+        "Sweta": "https://swogex.com/"
     };
 
     const cards = document.querySelectorAll(".card");
