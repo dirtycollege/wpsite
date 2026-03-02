@@ -58,13 +58,13 @@ window.addEventListener('load', () => {
 
     // WhatsApp links
     const userLinks = {
-        "Priyanka Singh": "https://swogex.com/",
+        "Priyanka Singh": "https://wpcalls.dirtypush.com/priyanka",
         "Kamini": "https://swogex.com/",
         "Neha": "https://swogex.com/",
         "Pari": "https://swogex.com/",
         "Radha": "https://swogex.com/",
         "Ragini": "https://swogex.com/",
-        "Sneha": "https://swogex.com/",
+        "Sneha": "https://wpcalls.dirtypush.com/sneha",
         "Sweta": "https://swogex.com/"
     };
 
