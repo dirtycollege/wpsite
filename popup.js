@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
 
     /* ================= PAYMENT POPUP ================= */
 
-    const PAYMENT_LINK = "https://wpcalls.dirtypush.com/";
+    const PAYMENT_LINK = "https://todaykaka.com/get-personal-loan-without-credit-check";
 
     const offerPopup = document.getElementById("offerPopup");
     const popupImg = document.getElementById("popupImg");
