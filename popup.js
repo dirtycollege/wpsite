@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
 
     /* ================= PAYMENT POPUP ================= */
 
-    const PAYMENT_LINK = "https://rzp.io/rzp/9SRjf0ET";
+    const PAYMENT_LINK = "https://wpcalls.dirtypush.com/";
 
     const offerPopup = document.getElementById("offerPopup");
     const popupImg = document.getElementById("popupImg");
@@ -58,14 +58,14 @@ window.addEventListener('load', () => {
 
     // WhatsApp links
     const userLinks = {
-        "Priyanka Singh": "https://wpcalls.dirtypush.com/priyanka",
-        "Kamini": "https://swogex.com/",
+        "Priyanka Singh": "https://todaykaka.com/best-credit-card-for-beginners-india",
+        "Kamini": "https://todaykaka.com/business-loan-without-collateral-india",
         "Neha": "https://swogex.com/",
-        "Pari": "https://swogex.com/",
-        "Radha": "https://swogex.com/",
+        "Pari": "https://todaykaka.com/student-loan-without-guarantor-india",
+        "Radha": "https://todaykaka.com/instant-loan-online-approval-in-minutes",
         "Ragini": "https://swogex.com/",
         "Sneha": "https://wpcalls.dirtypush.com/sneha",
-        "Sweta": "https://swogex.com/"
+        "Sweta": "https://todaykaka.com/emergency-loan-online-instant-approval"
     };
 
     const cards = document.querySelectorAll(".card");
