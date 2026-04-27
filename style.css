@@ -299,3 +299,30 @@ body {
 .confirm-btn:active {
   transform: scale(0.97);
 }
+/* ===== AD SECTION ===== */
+.ad-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 5px;
+  padding: 0 10px;
+}
+
+.ad-box {
+  width: 100%;
+  max-width: 350px;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive fix */
+@media (min-width: 768px) {
+  .ad-box {
+    max-width: 728px; /* Tablet/Desktop */
+  }
+}

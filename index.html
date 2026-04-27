@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<!-- ===== TOP SLIDER ===== -->
 <div class="top-slider">
   <div class="slides">
     <img src="./assets/banner1.webp" class="active">
@@ -16,8 +17,25 @@
   </div>
 </div>
 
+<!-- ===== AD (Slider ke niche) ===== -->
+<div class="ad-container">
+  <div class="ad-box">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : 'YOUR_ADSTERRA_KEY',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.topcreativeformat.com/YOUR_ADSTERRA_KEY/invoke.js"></script>
+  </div>
+</div>
+
 <div class="container">
 
+  <!-- CARD 1 -->
   <div class="card">
     <div class="status online"><span class="dot"></span>Online</div>
     <div class="media"><img src="./assets/Kajal.jpg"></div>
@@ -25,6 +43,7 @@
     <a href="#" class="card-btn"><img src="assets/whatsapp.png">Video Call</a>
   </div>
 
+  <!-- CARD 2 -->
   <div class="card">
     <div class="status online"><span class="dot"></span>Online</div>
     <div class="media"><img src="./assets/Kamini.jpg"></div>
@@ -32,6 +51,23 @@
     <a href="#" class="card-btn"><img src="assets/whatsapp.png">Video Call</a>
   </div>
 
+  <!-- ===== AD (2nd card ke baad) ===== -->
+  <div class="ad-container">
+    <div class="ad-box">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : 'YOUR_ADSTERRA_KEY',
+          'format' : 'iframe',
+          'height' : 250,
+          'width' : 300,
+          'params' : {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.topcreativeformat.com/YOUR_ADSTERRA_KEY/invoke.js"></script>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
   <div class="card">
     <div class="status online"><span class="dot"></span>Online</div>
     <div class="media"><img src="./assets/Neha.jpg"></div>
@@ -39,6 +75,7 @@
     <a href="#" class="card-btn"><img src="assets/whatsapp.png">Video Call</a>
   </div>
 
+  <!-- CARD 4 -->
   <div class="card">
     <div class="status online"><span class="dot"></span>Online</div>
     <div class="media"><img src="./assets/Pari.jpg"></div>
@@ -46,6 +83,7 @@
     <a href="#" class="card-btn"><img src="assets/whatsapp.png">Video Call</a>
   </div>
 
+  <!-- CARD 5 -->
   <div class="card">
     <div class="status online"><span class="dot"></span>Online</div>
     <div class="media"><img src="./assets/Radha.jpg"></div>
@@ -53,6 +91,7 @@
     <a href="#" class="card-btn"><img src="assets/whatsapp.png">Video Call</a>
   </div>
 
+  <!-- CARD 6 -->
   <div class="card">
     <div class="status online"><span class="dot"></span>Online</div>
     <div class="media"><img src="./assets/Ragini.jpg"></div>
@@ -60,6 +99,7 @@
     <a href="#" class="card-btn"><img src="assets/whatsapp.png">Video Call</a>
   </div>
 
+  <!-- CARD 7 -->
   <div class="card">
     <div class="status online"><span class="dot"></span>Online</div>
     <div class="media"><img src="./assets/Sneha.jpg"></div>
@@ -67,6 +107,7 @@
     <a href="#" class="card-btn"><img src="assets/whatsapp.png">Video Call</a>
   </div>
 
+  <!-- CARD 8 -->
   <div class="card">
     <div class="status online"><span class="dot"></span>Online</div>
     <div class="media"><img src="./assets/Sweta.jpg"></div>
@@ -76,16 +117,58 @@
 
 </div>
 
+<!-- ===== AD (Footer ke upar) ===== -->
+<div class="ad-container">
+  <div class="ad-box">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : 'YOUR_ADSTERRA_KEY',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.topcreativeformat.com/YOUR_ADSTERRA_KEY/invoke.js"></script>
+  </div>
+</div>
+
+<!-- ===== COUNTRY POPUP ===== -->
 <div id="countryPopup" class="popup">
   <div class="popup-content">
-    <h2>क्या आप मुझे चोदना चाहते हैं?</h2>
-    <h4>आप रात भर मेरे साथ वीडियो कॉल सेक्स chat करेंगे?</h4>
+    <h2>क्या आप मुझे देखना चाहते हैं?</h2>
+    <h4>आप रात भर मेरे साथ वीडियो कॉल chat करेंगे?</h4>
     <div class="popup-buttons">
       <button id="yesBtn" class="popup-btn">हाँ</button>
       <button id="noBtn" class="popup-btn">नहीं</button>
     </div>
   </div>
 </div>
+
+<!-- ===== PAYMENT POPUP ===== -->
+<div id="offerPopup" class="popup-overlay" style="display:none">
+  <div class="popup-box">
+    <span class="close-btn">✖</span>
+    <img src="" class="popup-img" id="popupImg">
+    <h2 class="popup-name">Video Call Online</h2>
+    <p class="pulse-text">
+      मुझसे Free वीडियो चैट करने लिए नीचे लिंक पर क्लिक करे-<br>
+      वीडियो कॉल रेडी है.
+    </p>
+    <img src="assets/payment.png" class="payment-img">
+    <a href="#" class="popup-btn-call" id="popupCallBtn">
+      <img src="assets/video-call-now.png">
+    </a>
+    <a href="#" id="confirmBtn" class="confirm-btn">
+      I HAVE FREE Video Call
+    </a>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <p>&copy; 2026 @dirtypush.com All rights reserved.</p>
+</footer>
 
 <script>
   const slides = document.querySelectorAll(".slides img");
@@ -96,37 +179,6 @@
     slides[i].classList.add("active");
   }, 2500);
 </script>
-
-<!-- ===== PAYMENT POPUP ===== -->
-<div id="offerPopup" class="popup-overlay" style="display:none">
-  <div class="popup-box">
-    <span class="close-btn">✖</span>
-
-    <img src="" class="popup-img" id="popupImg">
-
-    <h2 class="popup-name">Video Call Online</h2>
-
-    <p class="pulse-text">
-      मुझसे Free सेक्स वीडियो चैट करने लिए नीचे लिंक पर क्लिक करे-<br>
-      वीडियो कॉल रेडी है.
-    </p>
-
-    <img src="assets/payment.png" class="payment-img">
-
-    <a href="#" class="popup-btn-call" id="popupCallBtn">
-      <img src="assets/video-call-now.png">
-    </a>
-
-    <!-- CONFIRM BUTTON -->
-    <a href="#" id="confirmBtn" class="confirm-btn">
-      I HAVE FREE Video Call
-    </a>
-  </div>
-</div>
-
-<footer class="site-footer">
-  <p>&copy; 2026 @dirtypush.com All rights reserved.</p>
-</footer>
 
 <script src="popup.js"></script>
 
