@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
 
     /* ================= PAYMENT POPUP ================= */
 
-    const PAYMENT_LINK = "https://todaykaka.com/get-personal-loan-without-credit-check";
+    const PAYMENT_LINK = "https://dirtypush.com/hookup-apps-canada";
 
     const offerPopup = document.getElementById("offerPopup");
     const popupImg = document.getElementById("popupImg");
@@ -58,14 +58,14 @@ window.addEventListener('load', () => {
 
     // WhatsApp links
     const userLinks = {
-        "Priyanka Singh": "https://todaykaka.com/best-credit-card-for-beginners-india",
-        "Kamini": "https://todaykaka.com/business-loan-without-collateral-india",
+        "Priyanka Singh": "https://dirtypush.com/hookup-apps-canada",
+        "Kamini": "https://dirtypush.com/online-dating-tips-usa",
         "Neha": "https://swogex.com/",
         "Pari": "https://todaykaka.com/student-loan-without-guarantor-india",
-        "Radha": "https://todaykaka.com/instant-loan-online-approval-in-minutes",
+        "Radha": "https://dirtypush.com/online-dating-tips-india",
         "Ragini": "https://swogex.com/",
-        "Sneha": "https://wpcalls.dirtypush.com/sneha",
-        "Sweta": "https://todaykaka.com/emergency-loan-online-instant-approval"
+        "Sneha": "https://dirtypush.com/dating-apps-over-30-uk",
+        "Sweta": "https://dirtypush.com/dating-apps-serious-relationships-canada"
     };
 
     const cards = document.querySelectorAll(".card");
