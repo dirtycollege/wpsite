@@ -303,15 +303,15 @@ body {
 .ad-container {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   margin: 10px 0 5px;
   padding: 0 10px;
 }
 
 .ad-box {
   width: 100%;
-  max-width: 280px;
+  max-width: 300px;
   background: #000;
   border-radius: 10px;
   overflow: hidden;
@@ -321,8 +321,8 @@ body {
 }
 
 /* Responsive fix */
-@media (min-width: 768px) {
+@media (min-width: 580px) {
   .ad-box {
-    max-width: 728px; /* Tablet/Desktop */
+    max-width: 580px; /* Tablet/Desktop */
   }
 }
