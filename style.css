@@ -311,7 +311,7 @@ body {
 
 .ad-box {
   width: 100%;
-  max-width: 300px;
+  max-width: 280px;
   background: #000;
   border-radius: 10px;
   overflow: hidden;
@@ -321,8 +321,8 @@ body {
 }
 
 /* Responsive fix */
-@media (min-width: 580px) {
+@media (min-width: 480px) {
   .ad-box {
-    max-width: 580px; /* Tablet/Desktop */
+    max-width: 480px; /* Tablet/Desktop */
   }
 }
