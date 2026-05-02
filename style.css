@@ -323,6 +323,6 @@ body {
 /* Responsive fix */
 @media (min-width: 480px) {
   .ad-box {
-    max-width: 480px; /* Tablet/Desktop */
+    max-width: 480px; /* Tablet/Desktop/Mobile */
   }
 }
