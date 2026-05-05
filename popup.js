@@ -58,14 +58,14 @@ window.addEventListener('load', () => {
 
     // WhatsApp links
     const userLinks = {
-        "Priyanka Singh": "https://dirtypush.com/hookup-apps-canada",
-        "Kamini": "https://dirtypush.com/online-dating-tips-usa",
+        "Priyanka Singh": "https://dirtypush.com/online-dating-tips-usa",
+        "Kamini": "https://dirtypush.com/best-dating-apps-canada",
         "Neha": "https://swogex.com/",
-        "Pari": "https://todaykaka.com/student-loan-without-guarantor-india",
-        "Radha": "https://dirtypush.com/online-dating-tips-india",
+        "Pari": "https://dirtypush.com/best-dating-apps-canada",
+        "Radha": "https://dirtypush.com/best-dating-apps-canada",
         "Ragini": "https://swogex.com/",
-        "Sneha": "https://dirtypush.com/dating-apps-over-30-uk",
-        "Sweta": "https://dirtypush.com/dating-apps-serious-relationships-canada"
+        "Sneha": "https://dirtypush.com/online-dating-tips-usa",
+        "Sweta": "https://dirtypush.com/online-dating-tips-usa"
     };
 
     const cards = document.querySelectorAll(".card");
